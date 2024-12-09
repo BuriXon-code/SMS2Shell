@@ -115,14 +115,8 @@ function execute_command {
 		APACHE\ OFF)
 			apachectl -k stop &>/dev/null && output="Apache2 server OFF."
 		;;
-		HTTP-TUNNEL\ ON)
-			cloudflared tunnel run &>>~/.cloudflared/logs.txt & output="HTTP tunnel ON."
-		;;
-		HTTP-TUNNEL\ OFF)
-			pkill cloudflared &>/dev/null && output="HTTP tunnel OFF."
-		;;
 		*)
-			output="Unknown command:\n$command\nAvailable commands:\nBATTERY\nTORCH ON/OFF\nUPTIME\nLOCATION\nWHOAMI\nTEXT <text>\nCALC <operation>\nVOLUME NOTIFICATION <0-15>\nVOLUME MUSIC <0-150>\nVOLUME RING <0-15>"
+			output="Unknown command:\n$command\nAvailable commands:\nAPACHE ON/OFF\nBATTERY\nTORCH ON/OFF\nUPTIME\nLOCATION\nWHOAMI\nTEXT <text>\nCALC <operation>\nVOLUME NOTIFICATION <0-15>\nVOLUME MUSIC <0-150>\nVOLUME RING <0-15>"
 		;;
 	esac
 
