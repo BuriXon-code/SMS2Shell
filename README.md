@@ -60,13 +60,16 @@ or run in background:
 + `>> KILL` [kills the main Termux/terminal process]
 + `>> KILL-SELF` [kills its own PID]
 
+> [!TIP]
+> There are many possibilities to develop the script and add new functions and commands. If you have an idea for interesting implementations, let me know: **sms2shell@burixon.com.pl**
+
 ![screenshot](/sms.jpg)
 
 ## Compatibility ...
 
 The script for proper operation requires installed and configured Termux:API together with the termux-api package, Bash package installed.
 
-It was tested in Termux 0.119-beta with Polish phone numbers.
+Additionally, the script requires commands/packages that it should execute itself (e.g. apachectl for Apache2).
 
 > [!CAUTION]
 > **In the event of significant abuse in terms of the count and content of sent SMS messages, the operator may block the user's SIM card.**
