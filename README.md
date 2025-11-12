@@ -61,7 +61,7 @@ or run in background:
 + `>> KILL-SELF` [kills its own PID]
 
 > [!TIP]
-> There are many possibilities to develop the script and add new functions and commands. If you have an idea for interesting implementations, let me know: **sms2shell@burixon.com.pl**
+> There are many possibilities to develop the script and add new functions and commands. If you have an idea for interesting implementations, let me know: **support@burixon.dev**
 
 ![screenshot](/sms.jpg)
 
